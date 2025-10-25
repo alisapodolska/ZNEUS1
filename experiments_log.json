@@ -1,8 +1,8 @@
 [
     {
-        "timestamp": "2025-10-25 22:17:08",
-        "experiment_name": "grid_d0.2_bnTrue_botFalse",
-        "description": "Grid search experiment",
+        "timestamp": "2025-10-25 23:06:15",
+        "experiment_name": "baseline",
+        "description": "Baseline without improvements",
         "config": {
             "model": {
                 "input_dim": 27,
@@ -13,83 +13,7 @@
                 ],
                 "activation": "relu",
                 "output_activation": "sigmoid",
-                "dropout_rate": 0.2,
-                "batch_norm": true,
-                "skip_connection": false,
-                "bottleneck": false
-            },
-            "training": {
-                "batch_size": 64,
-                "epochs": 30,
-                "learning_rate": 0.001,
-                "optimizer": "adam",
-                "early_stopping": true,
-                "patience": 5
-            },
-            "experiment": {
-                "name": "grid_d0.2_bnTrue_botFalse",
-                "description": "Grid search experiment"
-            }
-        },
-        "metrics": {
-            "loss": 0.6425881385803223,
-            "accuracy": 0.6415344476699829,
-            "auc": 0.6810949444770813
-        }
-    },
-    {
-        "timestamp": "2025-10-25 22:17:39",
-        "experiment_name": "grid_d0.2_bnTrue_botTrue",
-        "description": "Grid search experiment",
-        "config": {
-            "model": {
-                "input_dim": 27,
-                "hidden_layers": [
-                    128,
-                    64,
-                    32
-                ],
-                "activation": "relu",
-                "output_activation": "sigmoid",
-                "dropout_rate": 0.2,
-                "batch_norm": true,
-                "skip_connection": false,
-                "bottleneck": true
-            },
-            "training": {
-                "batch_size": 64,
-                "epochs": 30,
-                "learning_rate": 0.001,
-                "optimizer": "adam",
-                "early_stopping": true,
-                "patience": 5
-            },
-            "experiment": {
-                "name": "grid_d0.2_bnTrue_botTrue",
-                "description": "Grid search experiment"
-            }
-        },
-        "metrics": {
-            "loss": 0.6445033550262451,
-            "accuracy": 0.6375884413719177,
-            "auc": 0.679853081703186
-        }
-    },
-    {
-        "timestamp": "2025-10-25 22:18:11",
-        "experiment_name": "grid_d0.2_bnFalse_botFalse",
-        "description": "Grid search experiment",
-        "config": {
-            "model": {
-                "input_dim": 27,
-                "hidden_layers": [
-                    128,
-                    64,
-                    32
-                ],
-                "activation": "relu",
-                "output_activation": "sigmoid",
-                "dropout_rate": 0.2,
+                "dropout_rate": 0,
                 "batch_norm": false,
                 "skip_connection": false,
                 "bottleneck": false
@@ -103,134 +27,23 @@
                 "patience": 5
             },
             "experiment": {
-                "name": "grid_d0.2_bnFalse_botFalse",
-                "description": "Grid search experiment"
+                "name": "baseline",
+                "description": "Baseline without improvements"
             }
         },
         "metrics": {
-            "loss": 0.6406688690185547,
-            "accuracy": 0.6405479311943054,
-            "auc": 0.681394100189209
+            "loss": 0.64139324426651,
+            "accuracy": 0.6383212804794312,
+            "auc": 0.6806128025054932,
+            "precision": 0.6291995048522949,
+            "recall": 0.596245527267456,
+            "f1": 0.6122794295383128
         }
     },
     {
-        "timestamp": "2025-10-25 22:18:35",
-        "experiment_name": "grid_d0.2_bnFalse_botTrue",
-        "description": "Grid search experiment",
-        "config": {
-            "model": {
-                "input_dim": 27,
-                "hidden_layers": [
-                    128,
-                    64,
-                    32
-                ],
-                "activation": "relu",
-                "output_activation": "sigmoid",
-                "dropout_rate": 0.2,
-                "batch_norm": false,
-                "skip_connection": false,
-                "bottleneck": true
-            },
-            "training": {
-                "batch_size": 64,
-                "epochs": 30,
-                "learning_rate": 0.001,
-                "optimizer": "adam",
-                "early_stopping": true,
-                "patience": 5
-            },
-            "experiment": {
-                "name": "grid_d0.2_bnFalse_botTrue",
-                "description": "Grid search experiment"
-            }
-        },
-        "metrics": {
-            "loss": 0.6413232088088989,
-            "accuracy": 0.6406606435775757,
-            "auc": 0.6804941296577454
-        }
-    },
-    {
-        "timestamp": "2025-10-25 22:19:07",
-        "experiment_name": "grid_d0.3_bnTrue_botFalse",
-        "description": "Grid search experiment",
-        "config": {
-            "model": {
-                "input_dim": 27,
-                "hidden_layers": [
-                    128,
-                    64,
-                    32
-                ],
-                "activation": "relu",
-                "output_activation": "sigmoid",
-                "dropout_rate": 0.3,
-                "batch_norm": true,
-                "skip_connection": false,
-                "bottleneck": false
-            },
-            "training": {
-                "batch_size": 64,
-                "epochs": 30,
-                "learning_rate": 0.001,
-                "optimizer": "adam",
-                "early_stopping": true,
-                "patience": 5
-            },
-            "experiment": {
-                "name": "grid_d0.3_bnTrue_botFalse",
-                "description": "Grid search experiment"
-            }
-        },
-        "metrics": {
-            "loss": 0.6431705355644226,
-            "accuracy": 0.6411679983139038,
-            "auc": 0.6811437606811523
-        }
-    },
-    {
-        "timestamp": "2025-10-25 22:19:32",
-        "experiment_name": "grid_d0.3_bnTrue_botTrue",
-        "description": "Grid search experiment",
-        "config": {
-            "model": {
-                "input_dim": 27,
-                "hidden_layers": [
-                    128,
-                    64,
-                    32
-                ],
-                "activation": "relu",
-                "output_activation": "sigmoid",
-                "dropout_rate": 0.3,
-                "batch_norm": true,
-                "skip_connection": false,
-                "bottleneck": true
-            },
-            "training": {
-                "batch_size": 64,
-                "epochs": 30,
-                "learning_rate": 0.001,
-                "optimizer": "adam",
-                "early_stopping": true,
-                "patience": 5
-            },
-            "experiment": {
-                "name": "grid_d0.3_bnTrue_botTrue",
-                "description": "Grid search experiment"
-            }
-        },
-        "metrics": {
-            "loss": 0.6428455114364624,
-            "accuracy": 0.6405479311943054,
-            "auc": 0.6808536052703857
-        }
-    },
-    {
-        "timestamp": "2025-10-25 22:19:51",
-        "experiment_name": "grid_d0.3_bnFalse_botFalse",
-        "description": "Grid search experiment",
+        "timestamp": "2025-10-25 23:06:33",
+        "experiment_name": "with_dropout",
+        "description": "Added dropout based on baseline overfitting check",
         "config": {
             "model": {
                 "input_dim": 27,
@@ -255,20 +68,23 @@
                 "patience": 5
             },
             "experiment": {
-                "name": "grid_d0.3_bnFalse_botFalse",
-                "description": "Grid search experiment"
+                "name": "with_dropout",
+                "description": "Added dropout based on baseline overfitting check"
             }
         },
         "metrics": {
-            "loss": 0.6409441232681274,
-            "accuracy": 0.6402660608291626,
-            "auc": 0.6805574297904968
+            "loss": 0.6411052346229553,
+            "accuracy": 0.6397305727005005,
+            "auc": 0.6802767515182495,
+            "precision": 0.6315855383872986,
+            "recall": 0.5947154760360718,
+            "f1": 0.6125962296175063
         }
     },
     {
-        "timestamp": "2025-10-25 22:20:05",
-        "experiment_name": "grid_d0.3_bnFalse_botTrue",
-        "description": "Grid search experiment",
+        "timestamp": "2025-10-25 23:07:00",
+        "experiment_name": "with_dropout_bn",
+        "description": "Added BN to stabilize training after dropout",
         "config": {
             "model": {
                 "input_dim": 27,
@@ -280,44 +96,6 @@
                 "activation": "relu",
                 "output_activation": "sigmoid",
                 "dropout_rate": 0.3,
-                "batch_norm": false,
-                "skip_connection": false,
-                "bottleneck": true
-            },
-            "training": {
-                "batch_size": 64,
-                "epochs": 30,
-                "learning_rate": 0.001,
-                "optimizer": "adam",
-                "early_stopping": true,
-                "patience": 5
-            },
-            "experiment": {
-                "name": "grid_d0.3_bnFalse_botTrue",
-                "description": "Grid search experiment"
-            }
-        },
-        "metrics": {
-            "loss": 0.6418344378471375,
-            "accuracy": 0.638884961605072,
-            "auc": 0.6795253753662109
-        }
-    },
-    {
-        "timestamp": "2025-10-25 22:20:31",
-        "experiment_name": "grid_d0.4_bnTrue_botFalse",
-        "description": "Grid search experiment",
-        "config": {
-            "model": {
-                "input_dim": 27,
-                "hidden_layers": [
-                    128,
-                    64,
-                    32
-                ],
-                "activation": "relu",
-                "output_activation": "sigmoid",
-                "dropout_rate": 0.4,
                 "batch_norm": true,
                 "skip_connection": false,
                 "bottleneck": false
@@ -331,20 +109,23 @@
                 "patience": 5
             },
             "experiment": {
-                "name": "grid_d0.4_bnTrue_botFalse",
-                "description": "Grid search experiment"
+                "name": "with_dropout_bn",
+                "description": "Added BN to stabilize training after dropout"
             }
         },
         "metrics": {
-            "loss": 0.6447189450263977,
-            "accuracy": 0.6398996710777283,
-            "auc": 0.680030107498169
+            "loss": 0.6438963413238525,
+            "accuracy": 0.6404351592063904,
+            "auc": 0.6804011464118958,
+            "precision": 0.6371583938598633,
+            "recall": 0.579003095626831,
+            "f1": 0.6066903036842917
         }
     },
     {
-        "timestamp": "2025-10-25 22:20:53",
-        "experiment_name": "grid_d0.4_bnTrue_botTrue",
-        "description": "Grid search experiment",
+        "timestamp": "2025-10-25 23:07:24",
+        "experiment_name": "with_dropout_bn_skip",
+        "description": "Added skip connections for better gradient flow",
         "config": {
             "model": {
                 "input_dim": 27,
@@ -355,235 +136,7 @@
                 ],
                 "activation": "relu",
                 "output_activation": "sigmoid",
-                "dropout_rate": 0.4,
-                "batch_norm": true,
-                "skip_connection": false,
-                "bottleneck": true
-            },
-            "training": {
-                "batch_size": 64,
-                "epochs": 30,
-                "learning_rate": 0.001,
-                "optimizer": "adam",
-                "early_stopping": true,
-                "patience": 5
-            },
-            "experiment": {
-                "name": "grid_d0.4_bnTrue_botTrue",
-                "description": "Grid search experiment"
-            }
-        },
-        "metrics": {
-            "loss": 0.646202802658081,
-            "accuracy": 0.63648921251297,
-            "auc": 0.6774828433990479
-        }
-    },
-    {
-        "timestamp": "2025-10-25 22:21:13",
-        "experiment_name": "grid_d0.4_bnFalse_botFalse",
-        "description": "Grid search experiment",
-        "config": {
-            "model": {
-                "input_dim": 27,
-                "hidden_layers": [
-                    128,
-                    64,
-                    32
-                ],
-                "activation": "relu",
-                "output_activation": "sigmoid",
-                "dropout_rate": 0.4,
-                "batch_norm": false,
-                "skip_connection": false,
-                "bottleneck": false
-            },
-            "training": {
-                "batch_size": 64,
-                "epochs": 30,
-                "learning_rate": 0.001,
-                "optimizer": "adam",
-                "early_stopping": true,
-                "patience": 5
-            },
-            "experiment": {
-                "name": "grid_d0.4_bnFalse_botFalse",
-                "description": "Grid search experiment"
-            }
-        },
-        "metrics": {
-            "loss": 0.6413447260856628,
-            "accuracy": 0.639815092086792,
-            "auc": 0.6798832416534424
-        }
-    },
-    {
-        "timestamp": "2025-10-25 22:21:25",
-        "experiment_name": "grid_d0.4_bnFalse_botTrue",
-        "description": "Grid search experiment",
-        "config": {
-            "model": {
-                "input_dim": 27,
-                "hidden_layers": [
-                    128,
-                    64,
-                    32
-                ],
-                "activation": "relu",
-                "output_activation": "sigmoid",
-                "dropout_rate": 0.4,
-                "batch_norm": false,
-                "skip_connection": false,
-                "bottleneck": true
-            },
-            "training": {
-                "batch_size": 64,
-                "epochs": 30,
-                "learning_rate": 0.001,
-                "optimizer": "adam",
-                "early_stopping": true,
-                "patience": 5
-            },
-            "experiment": {
-                "name": "grid_d0.4_bnFalse_botTrue",
-                "description": "Grid search experiment"
-            }
-        },
-        "metrics": {
-            "loss": 0.6425443291664124,
-            "accuracy": 0.6360945701599121,
-            "auc": 0.6795539855957031
-        }
-    },
-    {
-        "timestamp": "2025-10-25 22:21:50",
-        "experiment_name": "random_0",
-        "description": "Random search",
-        "config": {
-            "model": {
-                "input_dim": 27,
-                "hidden_layers": [
-                    128,
-                    64,
-                    32
-                ],
-                "activation": "relu",
-                "output_activation": "sigmoid",
-                "dropout_rate": 0.4,
-                "batch_norm": true,
-                "skip_connection": false,
-                "bottleneck": false
-            },
-            "training": {
-                "batch_size": 64,
-                "epochs": 30,
-                "learning_rate": 0.001,
-                "optimizer": "adam",
-                "early_stopping": true,
-                "patience": 5
-            },
-            "experiment": {
-                "name": "random_0",
-                "description": "Random search"
-            }
-        },
-        "metrics": {
-            "loss": 0.6434355974197388,
-            "accuracy": 0.6399841904640198,
-            "auc": 0.6805350184440613
-        }
-    },
-    {
-        "timestamp": "2025-10-25 22:22:27",
-        "experiment_name": "random_1",
-        "description": "Random search",
-        "config": {
-            "model": {
-                "input_dim": 27,
-                "hidden_layers": [
-                    128,
-                    64,
-                    32
-                ],
-                "activation": "relu",
-                "output_activation": "sigmoid",
-                "dropout_rate": 0.5,
-                "batch_norm": false,
-                "skip_connection": false,
-                "bottleneck": false
-            },
-            "training": {
-                "batch_size": 64,
-                "epochs": 30,
-                "learning_rate": 0.001,
-                "optimizer": "adam",
-                "early_stopping": true,
-                "patience": 5
-            },
-            "experiment": {
-                "name": "random_1",
-                "description": "Random search"
-            }
-        },
-        "metrics": {
-            "loss": 0.6407913565635681,
-            "accuracy": 0.6385467648506165,
-            "auc": 0.6810314655303955
-        }
-    },
-    {
-        "timestamp": "2025-10-25 22:23:05",
-        "experiment_name": "random_2",
-        "description": "Random search",
-        "config": {
-            "model": {
-                "input_dim": 27,
-                "hidden_layers": [
-                    128,
-                    64,
-                    32
-                ],
-                "activation": "relu",
-                "output_activation": "sigmoid",
-                "dropout_rate": 0.4,
-                "batch_norm": false,
-                "skip_connection": false,
-                "bottleneck": false
-            },
-            "training": {
-                "batch_size": 64,
-                "epochs": 30,
-                "learning_rate": 0.001,
-                "optimizer": "adam",
-                "early_stopping": true,
-                "patience": 5
-            },
-            "experiment": {
-                "name": "random_2",
-                "description": "Random search"
-            }
-        },
-        "metrics": {
-            "loss": 0.6405913829803467,
-            "accuracy": 0.638884961605072,
-            "auc": 0.680791437625885
-        }
-    },
-    {
-        "timestamp": "2025-10-25 22:23:26",
-        "experiment_name": "random_3",
-        "description": "Random search",
-        "config": {
-            "model": {
-                "input_dim": 27,
-                "hidden_layers": [
-                    128,
-                    64,
-                    32
-                ],
-                "activation": "relu",
-                "output_activation": "sigmoid",
-                "dropout_rate": 0.5,
+                "dropout_rate": 0.3,
                 "batch_norm": true,
                 "skip_connection": true,
                 "bottleneck": false
@@ -597,20 +150,23 @@
                 "patience": 5
             },
             "experiment": {
-                "name": "random_3",
-                "description": "Random search"
+                "name": "with_dropout_bn_skip",
+                "description": "Added skip connections for better gradient flow"
             }
         },
         "metrics": {
-            "loss": 0.645188570022583,
-            "accuracy": 0.6361509561538696,
-            "auc": 0.6761319637298584
+            "loss": 0.64398193359375,
+            "accuracy": 0.6388567686080933,
+            "auc": 0.6806950569152832,
+            "precision": 0.6416757106781006,
+            "recall": 0.5570529103279114,
+            "f1": 0.5963773822649237
         }
     },
     {
-        "timestamp": "2025-10-25 22:24:10",
-        "experiment_name": "random_4",
-        "description": "Random search",
+        "timestamp": "2025-10-25 23:07:56",
+        "experiment_name": "with_all_improvements",
+        "description": "Full improvements including bottleneck",
         "config": {
             "model": {
                 "input_dim": 27,
@@ -621,9 +177,9 @@
                 ],
                 "activation": "relu",
                 "output_activation": "sigmoid",
-                "dropout_rate": 0.5,
+                "dropout_rate": 0.3,
                 "batch_norm": true,
-                "skip_connection": false,
+                "skip_connection": true,
                 "bottleneck": true
             },
             "training": {
@@ -635,14 +191,2408 @@
                 "patience": 5
             },
             "experiment": {
-                "name": "random_4",
-                "description": "Random search"
+                "name": "with_all_improvements",
+                "description": "Full improvements including bottleneck"
             }
         },
         "metrics": {
-            "loss": 0.644870936870575,
-            "accuracy": 0.6361791491508484,
-            "auc": 0.6797970533370972
+            "loss": 0.6447309851646423,
+            "accuracy": 0.6400969624519348,
+            "auc": 0.6799483299255371,
+            "precision": 0.62621009349823,
+            "recall": 0.6166656613349915,
+            "f1": 0.6214012512230557
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:08:15",
+        "experiment_name": "grid_d0.2_bnTrue_botFalse_lr0.001_hid3",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.2,
+                "batch_norm": true,
+                "skip_connection": true,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.2_bnTrue_botFalse_lr0.001_hid3",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6460164189338684,
+            "accuracy": 0.6393641233444214,
+            "auc": 0.6785989999771118,
+            "precision": 0.6271504759788513,
+            "recall": 0.6092508435249329,
+            "f1": 0.6180711023551536
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:08:45",
+        "experiment_name": "grid_d0.2_bnTrue_botFalse_lr0.001_hid2",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.2,
+                "batch_norm": true,
+                "skip_connection": true,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.2_bnTrue_botFalse_lr0.001_hid2",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6434762477874756,
+            "accuracy": 0.6393077373504639,
+            "auc": 0.6798233985900879,
+            "precision": 0.636873722076416,
+            "recall": 0.5744718313217163,
+            "f1": 0.6040654682714025
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:09:34",
+        "experiment_name": "grid_d0.2_bnTrue_botFalse_lr0.0001_hid3",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.2,
+                "batch_norm": true,
+                "skip_connection": true,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.0001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.2_bnTrue_botFalse_lr0.0001_hid3",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6464096903800964,
+            "accuracy": 0.6376729607582092,
+            "auc": 0.6794019937515259,
+            "precision": 0.6285892128944397,
+            "recall": 0.5951862335205078,
+            "f1": 0.6114318532176647
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:10:03",
+        "experiment_name": "grid_d0.2_bnTrue_botFalse_lr0.0001_hid2",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.2,
+                "batch_norm": true,
+                "skip_connection": true,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.0001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.2_bnTrue_botFalse_lr0.0001_hid2",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.650809109210968,
+            "accuracy": 0.63462895154953,
+            "auc": 0.67439866065979,
+            "precision": 0.6451728940010071,
+            "recall": 0.5269817113876343,
+            "f1": 0.580118550189486
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:10:20",
+        "experiment_name": "grid_d0.2_bnTrue_botTrue_lr0.001_hid3",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.2,
+                "batch_norm": true,
+                "skip_connection": true,
+                "bottleneck": true
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.2_bnTrue_botTrue_lr0.001_hid3",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6445309519767761,
+            "accuracy": 0.6381803154945374,
+            "auc": 0.6777329444885254,
+            "precision": 0.629551112651825,
+            "recall": 0.5942447185516357,
+            "f1": 0.6113886113886113
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:10:40",
+        "experiment_name": "grid_d0.2_bnTrue_botTrue_lr0.001_hid2",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.2,
+                "batch_norm": true,
+                "skip_connection": true,
+                "bottleneck": true
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.2_bnTrue_botTrue_lr0.001_hid2",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6441524624824524,
+            "accuracy": 0.6399560570716858,
+            "auc": 0.6779464483261108,
+            "precision": 0.6303528547286987,
+            "recall": 0.6003060340881348,
+            "f1": 0.6149626235833132
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:10:59",
+        "experiment_name": "grid_d0.2_bnTrue_botTrue_lr0.0001_hid3",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.2,
+                "batch_norm": true,
+                "skip_connection": true,
+                "bottleneck": true
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.0001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.2_bnTrue_botTrue_lr0.0001_hid3",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6519239544868469,
+            "accuracy": 0.6340652108192444,
+            "auc": 0.6694434881210327,
+            "precision": 0.6292547583580017,
+            "recall": 0.574413001537323,
+            "f1": 0.6005845254576219
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:11:36",
+        "experiment_name": "grid_d0.2_bnTrue_botTrue_lr0.0001_hid2",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.2,
+                "batch_norm": true,
+                "skip_connection": true,
+                "bottleneck": true
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.0001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.2_bnTrue_botTrue_lr0.0001_hid2",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6469436287879944,
+            "accuracy": 0.6376166343688965,
+            "auc": 0.677725076675415,
+            "precision": 0.6339031457901001,
+            "recall": 0.576119601726532,
+            "f1": 0.6036316552085581
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:12:03",
+        "experiment_name": "grid_d0.2_bnFalse_botFalse_lr0.001_hid3",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.2,
+                "batch_norm": false,
+                "skip_connection": true,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.2_bnFalse_botFalse_lr0.001_hid3",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6404253244400024,
+            "accuracy": 0.6394205093383789,
+            "auc": 0.6815305948257446,
+            "precision": 0.6294698119163513,
+            "recall": 0.6008356213569641,
+            "f1": 0.6148194983891849
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:12:17",
+        "experiment_name": "grid_d0.2_bnFalse_botFalse_lr0.001_hid2",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.2,
+                "batch_norm": false,
+                "skip_connection": true,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.2_bnFalse_botFalse_lr0.001_hid2",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6407291293144226,
+            "accuracy": 0.6405761241912842,
+            "auc": 0.680820107460022,
+            "precision": 0.6368505954742432,
+            "recall": 0.58070969581604,
+            "f1": 0.6074858409258803
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:12:56",
+        "experiment_name": "grid_d0.2_bnFalse_botFalse_lr0.0001_hid3",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.2,
+                "batch_norm": false,
+                "skip_connection": true,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.0001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.2_bnFalse_botFalse_lr0.0001_hid3",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6406296491622925,
+            "accuracy": 0.6420136094093323,
+            "auc": 0.6812087893486023,
+            "precision": 0.6416314840316772,
+            "recall": 0.5721179246902466,
+            "f1": 0.604884118836522
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:13:27",
+        "experiment_name": "grid_d0.2_bnFalse_botFalse_lr0.0001_hid2",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.2,
+                "batch_norm": false,
+                "skip_connection": true,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.0001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.2_bnFalse_botFalse_lr0.0001_hid2",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6412235498428345,
+            "accuracy": 0.637560248374939,
+            "auc": 0.6800062656402588,
+            "precision": 0.6371963620185852,
+            "recall": 0.564938485622406,
+            "f1": 0.5988957858947566
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:13:53",
+        "experiment_name": "grid_d0.2_bnFalse_botTrue_lr0.001_hid3",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.2,
+                "batch_norm": false,
+                "skip_connection": true,
+                "bottleneck": true
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.2_bnFalse_botTrue_lr0.001_hid3",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6409093141555786,
+            "accuracy": 0.6383776068687439,
+            "auc": 0.6807373762130737,
+            "precision": 0.6305588483810425,
+            "recall": 0.5915965437889099,
+            "f1": 0.6104566431867865
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:14:12",
+        "experiment_name": "grid_d0.2_bnFalse_botTrue_lr0.001_hid2",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.2,
+                "batch_norm": false,
+                "skip_connection": true,
+                "bottleneck": true
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.2_bnFalse_botTrue_lr0.001_hid2",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6409355998039246,
+            "accuracy": 0.6398996710777283,
+            "auc": 0.6810611486434937,
+            "precision": 0.6333227753639221,
+            "recall": 0.5894191861152649,
+            "f1": 0.6105827846866618
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:19:48",
+        "experiment_name": "grid_d0.2_bnFalse_botTrue_lr0.0001_hid3",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.2,
+                "batch_norm": false,
+                "skip_connection": true,
+                "bottleneck": true
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.0001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.2_bnFalse_botTrue_lr0.0001_hid3",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.640616774559021,
+            "accuracy": 0.6402942538261414,
+            "auc": 0.6814038157463074,
+            "precision": 0.6347366571426392,
+            "recall": 0.5864768028259277,
+            "f1": 0.6096531473664892
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:20:20",
+        "experiment_name": "grid_d0.2_bnFalse_botTrue_lr0.0001_hid2",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.2,
+                "batch_norm": false,
+                "skip_connection": true,
+                "bottleneck": true
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.0001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.2_bnFalse_botTrue_lr0.0001_hid2",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6412865519523621,
+            "accuracy": 0.6383212804794312,
+            "auc": 0.6804611086845398,
+            "precision": 0.6312038898468018,
+            "recall": 0.5890072584152222,
+            "f1": 0.6093759512937595
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:24:55",
+        "experiment_name": "grid_d0.3_bnTrue_botFalse_lr0.001_hid3",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.3,
+                "batch_norm": true,
+                "skip_connection": true,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.3_bnTrue_botFalse_lr0.001_hid3",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6446049809455872,
+            "accuracy": 0.6399841904640198,
+            "auc": 0.6815281510353088,
+            "precision": 0.6354300379753113,
+            "recall": 0.5825928449630737,
+            "f1": 0.607865410002149
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:25:20",
+        "experiment_name": "grid_d0.3_bnTrue_botFalse_lr0.001_hid2",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.3,
+                "batch_norm": true,
+                "skip_connection": true,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.3_bnTrue_botFalse_lr0.001_hid2",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6436987519264221,
+            "accuracy": 0.6381239891052246,
+            "auc": 0.6800600290298462,
+            "precision": 0.6385220885276794,
+            "recall": 0.5634084343910217,
+            "f1": 0.5986181886391346
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:26:08",
+        "experiment_name": "grid_d0.3_bnTrue_botFalse_lr0.0001_hid3",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.3,
+                "batch_norm": true,
+                "skip_connection": true,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.0001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.3_bnTrue_botFalse_lr0.0001_hid3",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6490269303321838,
+            "accuracy": 0.6378703117370605,
+            "auc": 0.6791526675224304,
+            "precision": 0.6252644062042236,
+            "recall": 0.6087800860404968,
+            "f1": 0.6169121593416423
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:26:32",
+        "experiment_name": "grid_d0.3_bnTrue_botFalse_lr0.0001_hid2",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.3,
+                "batch_norm": true,
+                "skip_connection": true,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.0001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.3_bnTrue_botFalse_lr0.0001_hid2",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6522092819213867,
+            "accuracy": 0.6329377889633179,
+            "auc": 0.6710686683654785,
+            "precision": 0.6377707123756409,
+            "recall": 0.5407520532608032,
+            "f1": 0.5852679850960161
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:26:53",
+        "experiment_name": "grid_d0.3_bnTrue_botTrue_lr0.001_hid3",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.3,
+                "batch_norm": true,
+                "skip_connection": true,
+                "bottleneck": true
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.3_bnTrue_botTrue_lr0.001_hid3",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6455438137054443,
+            "accuracy": 0.6343188881874084,
+            "auc": 0.6784029603004456,
+            "precision": 0.6100191473960876,
+            "recall": 0.6556817293167114,
+            "f1": 0.6320267740654604
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:27:16",
+        "experiment_name": "grid_d0.3_bnTrue_botTrue_lr0.001_hid2",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.3,
+                "batch_norm": true,
+                "skip_connection": true,
+                "bottleneck": true
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.3_bnTrue_botTrue_lr0.001_hid2",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.642586886882782,
+            "accuracy": 0.638884961605072,
+            "auc": 0.679365336894989,
+            "precision": 0.6342904567718506,
+            "recall": 0.5810627937316895,
+            "f1": 0.6065110565110565
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:28:04",
+        "experiment_name": "grid_d0.3_bnTrue_botTrue_lr0.0001_hid3",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.3,
+                "batch_norm": true,
+                "skip_connection": true,
+                "bottleneck": true
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.0001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.3_bnTrue_botTrue_lr0.0001_hid3",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6470422148704529,
+            "accuracy": 0.63648921251297,
+            "auc": 0.678566575050354,
+            "precision": 0.6197941303253174,
+            "recall": 0.6235508918762207,
+            "f1": 0.6216668133415472
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:28:41",
+        "experiment_name": "grid_d0.3_bnTrue_botTrue_lr0.0001_hid2",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.3,
+                "batch_norm": true,
+                "skip_connection": true,
+                "bottleneck": true
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.0001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.3_bnTrue_botTrue_lr0.0001_hid2",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.648374080657959,
+            "accuracy": 0.635840892791748,
+            "auc": 0.6768608689308167,
+            "precision": 0.6360478401184082,
+            "recall": 0.5602895021438599,
+            "f1": 0.5957699768475064
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:29:02",
+        "experiment_name": "grid_d0.3_bnFalse_botFalse_lr0.001_hid3",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.3,
+                "batch_norm": false,
+                "skip_connection": true,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.3_bnFalse_botFalse_lr0.001_hid3",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6405313611030579,
+            "accuracy": 0.6384057998657227,
+            "auc": 0.6812939643859863,
+            "precision": 0.6301738023757935,
+            "recall": 0.5931265950202942,
+            "f1": 0.6110892169642587
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:29:29",
+        "experiment_name": "grid_d0.3_bnFalse_botFalse_lr0.001_hid2",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.3,
+                "batch_norm": false,
+                "skip_connection": true,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.3_bnFalse_botFalse_lr0.001_hid2",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6400572657585144,
+            "accuracy": 0.6419572234153748,
+            "auc": 0.6822102069854736,
+            "precision": 0.6372009515762329,
+            "recall": 0.5862413644790649,
+            "f1": 0.6106598829190548
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:30:08",
+        "experiment_name": "grid_d0.3_bnFalse_botFalse_lr0.0001_hid3",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.3,
+                "batch_norm": false,
+                "skip_connection": true,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.0001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.3_bnFalse_botFalse_lr0.0001_hid3",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6410486698150635,
+            "accuracy": 0.6401251554489136,
+            "auc": 0.6806002855300903,
+            "precision": 0.6365104913711548,
+            "recall": 0.5796504616737366,
+            "f1": 0.6067512627818159
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:30:39",
+        "experiment_name": "grid_d0.3_bnFalse_botFalse_lr0.0001_hid2",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.3,
+                "batch_norm": false,
+                "skip_connection": true,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.0001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.3_bnFalse_botFalse_lr0.0001_hid2",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6420785784721375,
+            "accuracy": 0.6380957961082458,
+            "auc": 0.6795518398284912,
+            "precision": 0.6394841074943542,
+            "recall": 0.5602306723594666,
+            "f1": 0.5972396486825596
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:31:00",
+        "experiment_name": "grid_d0.3_bnFalse_botTrue_lr0.001_hid3",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.3,
+                "batch_norm": false,
+                "skip_connection": true,
+                "bottleneck": true
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.3_bnFalse_botTrue_lr0.001_hid3",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6415818929672241,
+            "accuracy": 0.6398432850837708,
+            "auc": 0.6812363862991333,
+            "precision": 0.6475117206573486,
+            "recall": 0.5444006323814392,
+            "f1": 0.5914961636828644
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:31:22",
+        "experiment_name": "grid_d0.3_bnFalse_botTrue_lr0.001_hid2",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.3,
+                "batch_norm": false,
+                "skip_connection": true,
+                "bottleneck": true
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.3_bnFalse_botTrue_lr0.001_hid2",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6409251689910889,
+            "accuracy": 0.6399560570716858,
+            "auc": 0.6808971166610718,
+            "precision": 0.6401940584182739,
+            "recall": 0.566880464553833,
+            "f1": 0.601310861423221
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:32:01",
+        "experiment_name": "grid_d0.3_bnFalse_botTrue_lr0.0001_hid3",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.3,
+                "batch_norm": false,
+                "skip_connection": true,
+                "bottleneck": true
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.0001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.3_bnFalse_botTrue_lr0.0001_hid3",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6414476037025452,
+            "accuracy": 0.6382367014884949,
+            "auc": 0.6802501678466797,
+            "precision": 0.6359356641769409,
+            "recall": 0.5723533034324646,
+            "f1": 0.6024715829900579
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:32:34",
+        "experiment_name": "grid_d0.3_bnFalse_botTrue_lr0.0001_hid2",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.3,
+                "batch_norm": false,
+                "skip_connection": true,
+                "bottleneck": true
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.0001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.3_bnFalse_botTrue_lr0.0001_hid2",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6421023011207581,
+            "accuracy": 0.637954831123352,
+            "auc": 0.679482102394104,
+            "precision": 0.6373692154884338,
+            "recall": 0.5662919878959656,
+            "f1": 0.5997320120906173
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:32:56",
+        "experiment_name": "grid_d0.4_bnTrue_botFalse_lr0.001_hid3",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.4,
+                "batch_norm": true,
+                "skip_connection": true,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.4_bnTrue_botFalse_lr0.001_hid3",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6441952586174011,
+            "accuracy": 0.6392795443534851,
+            "auc": 0.6802749633789062,
+            "precision": 0.6343948245048523,
+            "recall": 0.582651674747467,
+            "f1": 0.6074233128834355
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:33:17",
+        "experiment_name": "grid_d0.4_bnTrue_botFalse_lr0.001_hid2",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.4,
+                "batch_norm": true,
+                "skip_connection": true,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.4_bnTrue_botFalse_lr0.001_hid2",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6468195915222168,
+            "accuracy": 0.6358690857887268,
+            "auc": 0.6782243847846985,
+            "precision": 0.6412229537963867,
+            "recall": 0.5442829132080078,
+            "f1": 0.5887895088646274
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:34:06",
+        "experiment_name": "grid_d0.4_bnTrue_botFalse_lr0.0001_hid3",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.4,
+                "batch_norm": true,
+                "skip_connection": true,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.0001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.4_bnTrue_botFalse_lr0.0001_hid3",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6475644111633301,
+            "accuracy": 0.6381239891052246,
+            "auc": 0.6792701482772827,
+            "precision": 0.6331580877304077,
+            "recall": 0.5811805129051208,
+            "f1": 0.6060568868706084
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:34:44",
+        "experiment_name": "grid_d0.4_bnTrue_botFalse_lr0.0001_hid2",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.4,
+                "batch_norm": true,
+                "skip_connection": true,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.0001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.4_bnTrue_botFalse_lr0.0001_hid2",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6516594886779785,
+            "accuracy": 0.6341779828071594,
+            "auc": 0.6762373447418213,
+            "precision": 0.6533700227737427,
+            "recall": 0.5031483769416809,
+            "f1": 0.5685029422520695
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:35:11",
+        "experiment_name": "grid_d0.4_bnTrue_botTrue_lr0.001_hid3",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.4,
+                "batch_norm": true,
+                "skip_connection": true,
+                "bottleneck": true
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.4_bnTrue_botTrue_lr0.001_hid3",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6460623145103455,
+            "accuracy": 0.6368837952613831,
+            "auc": 0.679474949836731,
+            "precision": 0.6197692155838013,
+            "recall": 0.625787079334259,
+            "f1": 0.6227636086791016
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:35:41",
+        "experiment_name": "grid_d0.4_bnTrue_botTrue_lr0.001_hid2",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.4,
+                "batch_norm": true,
+                "skip_connection": true,
+                "bottleneck": true
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.4_bnTrue_botTrue_lr0.001_hid2",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6446151733398438,
+            "accuracy": 0.6399841904640198,
+            "auc": 0.6793498396873474,
+            "precision": 0.6319739818572998,
+            "recall": 0.5945977568626404,
+            "f1": 0.6127164124799127
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:36:30",
+        "experiment_name": "grid_d0.4_bnTrue_botTrue_lr0.0001_hid3",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.4,
+                "batch_norm": true,
+                "skip_connection": true,
+                "bottleneck": true
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.0001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.4_bnTrue_botTrue_lr0.0001_hid3",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6477022171020508,
+            "accuracy": 0.6376729607582092,
+            "auc": 0.6778216361999512,
+            "precision": 0.6319683790206909,
+            "recall": 0.5830636024475098,
+            "f1": 0.6065317865997367
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:37:03",
+        "experiment_name": "grid_d0.4_bnTrue_botTrue_lr0.0001_hid2",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.4,
+                "batch_norm": true,
+                "skip_connection": true,
+                "bottleneck": true
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.0001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.4_bnTrue_botTrue_lr0.0001_hid2",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6497354507446289,
+            "accuracy": 0.6330505609512329,
+            "auc": 0.6717641353607178,
+            "precision": 0.6317988634109497,
+            "recall": 0.5605249404907227,
+            "f1": 0.5940316193208395
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:37:28",
+        "experiment_name": "grid_d0.4_bnFalse_botFalse_lr0.001_hid3",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.4,
+                "batch_norm": false,
+                "skip_connection": true,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.4_bnFalse_botFalse_lr0.001_hid3",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6406617164611816,
+            "accuracy": 0.6400123834609985,
+            "auc": 0.6813629865646362,
+            "precision": 0.6327776312828064,
+            "recall": 0.5918907523155212,
+            "f1": 0.6116516662612503
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:37:54",
+        "experiment_name": "grid_d0.4_bnFalse_botFalse_lr0.001_hid2",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.4,
+                "batch_norm": false,
+                "skip_connection": true,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.4_bnFalse_botFalse_lr0.001_hid2",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6411643624305725,
+            "accuracy": 0.6403224468231201,
+            "auc": 0.6811267137527466,
+            "precision": 0.6464359760284424,
+            "recall": 0.5496969223022461,
+            "f1": 0.5941545017969023
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:38:37",
+        "experiment_name": "grid_d0.4_bnFalse_botFalse_lr0.0001_hid3",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.4,
+                "batch_norm": false,
+                "skip_connection": true,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.0001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.4_bnFalse_botFalse_lr0.0001_hid3",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6412611603736877,
+            "accuracy": 0.6393359303474426,
+            "auc": 0.6813192367553711,
+            "precision": 0.6315921545028687,
+            "recall": 0.5927146673202515,
+            "f1": 0.6115361262902247
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:39:10",
+        "experiment_name": "grid_d0.4_bnFalse_botFalse_lr0.0001_hid2",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.4,
+                "batch_norm": false,
+                "skip_connection": true,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.0001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.4_bnFalse_botFalse_lr0.0001_hid2",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6434420347213745,
+            "accuracy": 0.6382648944854736,
+            "auc": 0.6783238649368286,
+            "precision": 0.643226146697998,
+            "recall": 0.5495792627334595,
+            "f1": 0.5927265803503428
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:39:46",
+        "experiment_name": "grid_d0.4_bnFalse_botTrue_lr0.001_hid3",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.4,
+                "batch_norm": false,
+                "skip_connection": true,
+                "bottleneck": true
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.4_bnFalse_botTrue_lr0.001_hid3",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6409741044044495,
+            "accuracy": 0.6401533484458923,
+            "auc": 0.6814879179000854,
+            "precision": 0.6315690875053406,
+            "recall": 0.5968928337097168,
+            "f1": 0.6137415665748949
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:40:04",
+        "experiment_name": "grid_d0.4_bnFalse_botTrue_lr0.001_hid2",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.4,
+                "batch_norm": false,
+                "skip_connection": true,
+                "bottleneck": true
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.4_bnFalse_botTrue_lr0.001_hid2",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6435319185256958,
+            "accuracy": 0.6397868990898132,
+            "auc": 0.680405855178833,
+            "precision": 0.637061595916748,
+            "recall": 0.5761784315109253,
+            "f1": 0.6050923923119709
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:40:46",
+        "experiment_name": "grid_d0.4_bnFalse_botTrue_lr0.0001_hid3",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.4,
+                "batch_norm": false,
+                "skip_connection": true,
+                "bottleneck": true
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.0001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.4_bnFalse_botTrue_lr0.0001_hid3",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6426310539245605,
+            "accuracy": 0.6383212804794312,
+            "auc": 0.679876446723938,
+            "precision": 0.6325581669807434,
+            "recall": 0.5842405557632446,
+            "f1": 0.6074400391581009
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:41:20",
+        "experiment_name": "grid_d0.4_bnFalse_botTrue_lr0.0001_hid2",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.4,
+                "batch_norm": false,
+                "skip_connection": true,
+                "bottleneck": true
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.0001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.4_bnFalse_botTrue_lr0.0001_hid2",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6426982283592224,
+            "accuracy": 0.6376448273658752,
+            "auc": 0.6784117221832275,
+            "precision": 0.6329626441001892,
+            "recall": 0.5794739127159119,
+            "f1": 0.6050384024577573
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:42:01",
+        "experiment_name": "random_0",
+        "description": "Random search, focusing on params that improved in grid (e.g., lower LR if overfitting)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    256,
+                    128,
+                    64
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.1,
+                "batch_norm": true,
+                "skip_connection": false,
+                "bottleneck": true
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 50,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "random_0",
+                "description": "Random search, focusing on params that improved in grid (e.g., lower LR if overfitting)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6436184048652649,
+            "accuracy": 0.6407734155654907,
+            "auc": 0.6805156469345093,
+            "precision": 0.6356841921806335,
+            "recall": 0.5855940580368042,
+            "f1": 0.6096119092106472
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:42:47",
+        "experiment_name": "random_1",
+        "description": "Random search, focusing on params that improved in grid (e.g., lower LR if overfitting)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.1,
+                "batch_norm": false,
+                "skip_connection": false,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 50,
+                "learning_rate": 0.0001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "random_1",
+                "description": "Random search, focusing on params that improved in grid (e.g., lower LR if overfitting)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6402128338813782,
+            "accuracy": 0.641139805316925,
+            "auc": 0.6817315816879272,
+            "precision": 0.6383351683616638,
+            "recall": 0.578532338142395,
+            "f1": 0.6069642526393777
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:43:40",
+        "experiment_name": "random_2",
+        "description": "Random search, focusing on params that improved in grid (e.g., lower LR if overfitting)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.1,
+                "batch_norm": true,
+                "skip_connection": false,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 32,
+                "epochs": 50,
+                "learning_rate": 0.0001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "random_2",
+                "description": "Random search, focusing on params that improved in grid (e.g., lower LR if overfitting)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6564764976501465,
+            "accuracy": 0.6371092796325684,
+            "auc": 0.6746038794517517,
+            "precision": 0.6283665895462036,
+            "recall": 0.5931265950202942,
+            "f1": 0.610238246601883
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:43:58",
+        "experiment_name": "random_3",
+        "description": "Random search, focusing on params that improved in grid (e.g., lower LR if overfitting)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.4,
+                "batch_norm": false,
+                "skip_connection": true,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 128,
+                "epochs": 20,
+                "learning_rate": 0.0005,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "random_3",
+                "description": "Random search, focusing on params that improved in grid (e.g., lower LR if overfitting)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6404409408569336,
+            "accuracy": 0.6393359303474426,
+            "auc": 0.6816519498825073,
+            "precision": 0.6323223114013672,
+            "recall": 0.590125322341919,
+            "f1": 0.6104955558261294
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:44:29",
+        "experiment_name": "random_4",
+        "description": "Random search, focusing on params that improved in grid (e.g., lower LR if overfitting)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.4,
+                "batch_norm": true,
+                "skip_connection": false,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 20,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "random_4",
+                "description": "Random search, focusing on params that improved in grid (e.g., lower LR if overfitting)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6440993547439575,
+            "accuracy": 0.6406888365745544,
+            "auc": 0.6800702810287476,
+            "precision": 0.6350104808807373,
+            "recall": 0.5874772071838379,
+            "f1": 0.6103197407837623
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:44:42",
+        "experiment_name": "random_5",
+        "description": "Random search, focusing on params that improved in grid (e.g., lower LR if overfitting)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.5,
+                "batch_norm": false,
+                "skip_connection": false,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 128,
+                "epochs": 20,
+                "learning_rate": 0.0001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "random_5",
+                "description": "Random search, focusing on params that improved in grid (e.g., lower LR if overfitting)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6505297422409058,
+            "accuracy": 0.6296119093894958,
+            "auc": 0.6693252325057983,
+            "precision": 0.6234456896781921,
+            "recall": 0.5724121928215027,
+            "f1": 0.5968400061359104
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:45:32",
+        "experiment_name": "random_6",
+        "description": "Random search, focusing on params that improved in grid (e.g., lower LR if overfitting)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.4,
+                "batch_norm": true,
+                "skip_connection": false,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 32,
+                "epochs": 50,
+                "learning_rate": 0.0005,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "random_6",
+                "description": "Random search, focusing on params that improved in grid (e.g., lower LR if overfitting)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6465983390808105,
+            "accuracy": 0.6403506398200989,
+            "auc": 0.6786432266235352,
+            "precision": 0.6368220448493958,
+            "recall": 0.5797092914581299,
+            "f1": 0.606925020023412
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:46:30",
+        "experiment_name": "random_7",
+        "description": "Random search, focusing on params that improved in grid (e.g., lower LR if overfitting)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.2,
+                "batch_norm": false,
+                "skip_connection": true,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 32,
+                "epochs": 30,
+                "learning_rate": 0.0005,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "random_7",
+                "description": "Random search, focusing on params that improved in grid (e.g., lower LR if overfitting)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6405583620071411,
+            "accuracy": 0.6389977335929871,
+            "auc": 0.6810563802719116,
+            "precision": 0.6352006196975708,
+            "recall": 0.578532338142395,
+            "f1": 0.6055435786880197
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:46:51",
+        "experiment_name": "random_8",
+        "description": "Random search, focusing on params that improved in grid (e.g., lower LR if overfitting)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.1,
+                "batch_norm": false,
+                "skip_connection": true,
+                "bottleneck": true
+            },
+            "training": {
+                "batch_size": 128,
+                "epochs": 20,
+                "learning_rate": 0.0001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "random_8",
+                "description": "Random search, focusing on params that improved in grid (e.g., lower LR if overfitting)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6413094997406006,
+            "accuracy": 0.6396459937095642,
+            "auc": 0.6800503730773926,
+            "precision": 0.6349064111709595,
+            "recall": 0.5827105045318604,
+            "f1": 0.607689711252263
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:47:13",
+        "experiment_name": "random_9",
+        "description": "Random search, focusing on params that improved in grid (e.g., lower LR if overfitting)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.4,
+                "batch_norm": true,
+                "skip_connection": false,
+                "bottleneck": true
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 50,
+                "learning_rate": 0.0005,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "random_9",
+                "description": "Random search, focusing on params that improved in grid (e.g., lower LR if overfitting)"
+            }
+        },
+        "metrics": {
+            "loss": 0.6457290649414062,
+            "accuracy": 0.6381239891052246,
+            "auc": 0.6782914400100708,
+            "precision": 0.6303665637969971,
+            "recall": 0.5910080671310425,
+            "f1": 0.6100531511009871
+        }
+    },
+    {
+        "timestamp": "2025-10-25 23:47:51",
+        "experiment_name": "grid_d0.3_bnTrue_botTrue_lr0.001_hid3",
+        "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.3,
+                "batch_norm": true,
+                "skip_connection": true,
+                "bottleneck": true
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.3_bnTrue_botTrue_lr0.001_hid3",
+                "description": "Expanded grid search based on best from experiments (e.g., with dropout and BN)"
+            }
+        },
+        "metrics": {
+            "loss": 0.643592119216919,
+            "accuracy": 0.6399560570716858,
+            "auc": 0.6799857020378113,
+            "precision": 0.6399707794189453,
+            "recall": 0.5675866603851318,
+            "f1": 0.6016092814371258
         }
     }
 ]
