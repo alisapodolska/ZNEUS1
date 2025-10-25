@@ -1,0 +1,648 @@
+[
+    {
+        "timestamp": "2025-10-25 22:17:08",
+        "experiment_name": "grid_d0.2_bnTrue_botFalse",
+        "description": "Grid search experiment",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.2,
+                "batch_norm": true,
+                "skip_connection": false,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.2_bnTrue_botFalse",
+                "description": "Grid search experiment"
+            }
+        },
+        "metrics": {
+            "loss": 0.6425881385803223,
+            "accuracy": 0.6415344476699829,
+            "auc": 0.6810949444770813
+        }
+    },
+    {
+        "timestamp": "2025-10-25 22:17:39",
+        "experiment_name": "grid_d0.2_bnTrue_botTrue",
+        "description": "Grid search experiment",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.2,
+                "batch_norm": true,
+                "skip_connection": false,
+                "bottleneck": true
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.2_bnTrue_botTrue",
+                "description": "Grid search experiment"
+            }
+        },
+        "metrics": {
+            "loss": 0.6445033550262451,
+            "accuracy": 0.6375884413719177,
+            "auc": 0.679853081703186
+        }
+    },
+    {
+        "timestamp": "2025-10-25 22:18:11",
+        "experiment_name": "grid_d0.2_bnFalse_botFalse",
+        "description": "Grid search experiment",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.2,
+                "batch_norm": false,
+                "skip_connection": false,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.2_bnFalse_botFalse",
+                "description": "Grid search experiment"
+            }
+        },
+        "metrics": {
+            "loss": 0.6406688690185547,
+            "accuracy": 0.6405479311943054,
+            "auc": 0.681394100189209
+        }
+    },
+    {
+        "timestamp": "2025-10-25 22:18:35",
+        "experiment_name": "grid_d0.2_bnFalse_botTrue",
+        "description": "Grid search experiment",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.2,
+                "batch_norm": false,
+                "skip_connection": false,
+                "bottleneck": true
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.2_bnFalse_botTrue",
+                "description": "Grid search experiment"
+            }
+        },
+        "metrics": {
+            "loss": 0.6413232088088989,
+            "accuracy": 0.6406606435775757,
+            "auc": 0.6804941296577454
+        }
+    },
+    {
+        "timestamp": "2025-10-25 22:19:07",
+        "experiment_name": "grid_d0.3_bnTrue_botFalse",
+        "description": "Grid search experiment",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.3,
+                "batch_norm": true,
+                "skip_connection": false,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.3_bnTrue_botFalse",
+                "description": "Grid search experiment"
+            }
+        },
+        "metrics": {
+            "loss": 0.6431705355644226,
+            "accuracy": 0.6411679983139038,
+            "auc": 0.6811437606811523
+        }
+    },
+    {
+        "timestamp": "2025-10-25 22:19:32",
+        "experiment_name": "grid_d0.3_bnTrue_botTrue",
+        "description": "Grid search experiment",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.3,
+                "batch_norm": true,
+                "skip_connection": false,
+                "bottleneck": true
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.3_bnTrue_botTrue",
+                "description": "Grid search experiment"
+            }
+        },
+        "metrics": {
+            "loss": 0.6428455114364624,
+            "accuracy": 0.6405479311943054,
+            "auc": 0.6808536052703857
+        }
+    },
+    {
+        "timestamp": "2025-10-25 22:19:51",
+        "experiment_name": "grid_d0.3_bnFalse_botFalse",
+        "description": "Grid search experiment",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.3,
+                "batch_norm": false,
+                "skip_connection": false,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.3_bnFalse_botFalse",
+                "description": "Grid search experiment"
+            }
+        },
+        "metrics": {
+            "loss": 0.6409441232681274,
+            "accuracy": 0.6402660608291626,
+            "auc": 0.6805574297904968
+        }
+    },
+    {
+        "timestamp": "2025-10-25 22:20:05",
+        "experiment_name": "grid_d0.3_bnFalse_botTrue",
+        "description": "Grid search experiment",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.3,
+                "batch_norm": false,
+                "skip_connection": false,
+                "bottleneck": true
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.3_bnFalse_botTrue",
+                "description": "Grid search experiment"
+            }
+        },
+        "metrics": {
+            "loss": 0.6418344378471375,
+            "accuracy": 0.638884961605072,
+            "auc": 0.6795253753662109
+        }
+    },
+    {
+        "timestamp": "2025-10-25 22:20:31",
+        "experiment_name": "grid_d0.4_bnTrue_botFalse",
+        "description": "Grid search experiment",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.4,
+                "batch_norm": true,
+                "skip_connection": false,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.4_bnTrue_botFalse",
+                "description": "Grid search experiment"
+            }
+        },
+        "metrics": {
+            "loss": 0.6447189450263977,
+            "accuracy": 0.6398996710777283,
+            "auc": 0.680030107498169
+        }
+    },
+    {
+        "timestamp": "2025-10-25 22:20:53",
+        "experiment_name": "grid_d0.4_bnTrue_botTrue",
+        "description": "Grid search experiment",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.4,
+                "batch_norm": true,
+                "skip_connection": false,
+                "bottleneck": true
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.4_bnTrue_botTrue",
+                "description": "Grid search experiment"
+            }
+        },
+        "metrics": {
+            "loss": 0.646202802658081,
+            "accuracy": 0.63648921251297,
+            "auc": 0.6774828433990479
+        }
+    },
+    {
+        "timestamp": "2025-10-25 22:21:13",
+        "experiment_name": "grid_d0.4_bnFalse_botFalse",
+        "description": "Grid search experiment",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.4,
+                "batch_norm": false,
+                "skip_connection": false,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.4_bnFalse_botFalse",
+                "description": "Grid search experiment"
+            }
+        },
+        "metrics": {
+            "loss": 0.6413447260856628,
+            "accuracy": 0.639815092086792,
+            "auc": 0.6798832416534424
+        }
+    },
+    {
+        "timestamp": "2025-10-25 22:21:25",
+        "experiment_name": "grid_d0.4_bnFalse_botTrue",
+        "description": "Grid search experiment",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.4,
+                "batch_norm": false,
+                "skip_connection": false,
+                "bottleneck": true
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "grid_d0.4_bnFalse_botTrue",
+                "description": "Grid search experiment"
+            }
+        },
+        "metrics": {
+            "loss": 0.6425443291664124,
+            "accuracy": 0.6360945701599121,
+            "auc": 0.6795539855957031
+        }
+    },
+    {
+        "timestamp": "2025-10-25 22:21:50",
+        "experiment_name": "random_0",
+        "description": "Random search",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.4,
+                "batch_norm": true,
+                "skip_connection": false,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "random_0",
+                "description": "Random search"
+            }
+        },
+        "metrics": {
+            "loss": 0.6434355974197388,
+            "accuracy": 0.6399841904640198,
+            "auc": 0.6805350184440613
+        }
+    },
+    {
+        "timestamp": "2025-10-25 22:22:27",
+        "experiment_name": "random_1",
+        "description": "Random search",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.5,
+                "batch_norm": false,
+                "skip_connection": false,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "random_1",
+                "description": "Random search"
+            }
+        },
+        "metrics": {
+            "loss": 0.6407913565635681,
+            "accuracy": 0.6385467648506165,
+            "auc": 0.6810314655303955
+        }
+    },
+    {
+        "timestamp": "2025-10-25 22:23:05",
+        "experiment_name": "random_2",
+        "description": "Random search",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.4,
+                "batch_norm": false,
+                "skip_connection": false,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "random_2",
+                "description": "Random search"
+            }
+        },
+        "metrics": {
+            "loss": 0.6405913829803467,
+            "accuracy": 0.638884961605072,
+            "auc": 0.680791437625885
+        }
+    },
+    {
+        "timestamp": "2025-10-25 22:23:26",
+        "experiment_name": "random_3",
+        "description": "Random search",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.5,
+                "batch_norm": true,
+                "skip_connection": true,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "random_3",
+                "description": "Random search"
+            }
+        },
+        "metrics": {
+            "loss": 0.645188570022583,
+            "accuracy": 0.6361509561538696,
+            "auc": 0.6761319637298584
+        }
+    },
+    {
+        "timestamp": "2025-10-25 22:24:10",
+        "experiment_name": "random_4",
+        "description": "Random search",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.5,
+                "batch_norm": true,
+                "skip_connection": false,
+                "bottleneck": true
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "random_4",
+                "description": "Random search"
+            }
+        },
+        "metrics": {
+            "loss": 0.644870936870575,
+            "accuracy": 0.6361791491508484,
+            "auc": 0.6797970533370972
+        }
+    }
+]

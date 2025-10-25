@@ -1,0 +1,28 @@
+{
+    "model": {
+        "input_dim": 27,
+        "hidden_layers": [
+            128,
+            64,
+            32
+        ],
+        "activation": "relu",
+        "output_activation": "sigmoid",
+        "dropout_rate": 0.3,
+        "batch_norm": true,
+        "skip_connection": false,
+        "bottleneck": false
+    },
+    "training": {
+        "batch_size": 64,
+        "epochs": 30,
+        "learning_rate": 0.001,
+        "optimizer": "adam",
+        "early_stopping": true,
+        "patience": 5
+    },
+    "experiment": {
+        "name": "baseline_mlp_dropout_bn",
+        "description": "Baseline model with dropout and BN"
+    }
+}
