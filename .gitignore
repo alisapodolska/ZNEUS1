@@ -12,3 +12,6 @@ __pycache__/
 *.h5
 *.pkl
 *.joblib
+
+# wandb logs
+wandb/
