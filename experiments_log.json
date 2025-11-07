@@ -1,6 +1,6 @@
 [
     {
-        "timestamp": "2025-11-01 22:00:06",
+        "timestamp": "2025-11-07 20:37:17",
         "experiment_name": "baseline",
         "description": "Baseline without improvements",
         "config": {
@@ -32,16 +32,16 @@
             }
         },
         "metrics": {
-            "loss": 0.6460775136947632,
-            "accuracy": 0.633179247379303,
-            "auc": 0.6730955839157104,
-            "precision": 0.629653811454773,
-            "recall": 0.6250220537185669,
-            "f1": 0.6273293759782641
+            "loss": 0.6460254788398743,
+            "accuracy": 0.6332955360412598,
+            "auc": 0.672183096408844,
+            "precision": 0.6346745491027832,
+            "recall": 0.6070734858512878,
+            "f1": 0.6205672692272987
         }
     },
     {
-        "timestamp": "2025-11-01 22:00:26",
+        "timestamp": "2025-11-07 20:37:36",
         "experiment_name": "with_dropout",
         "description": "Added dropout for regularization",
         "config": {
@@ -73,16 +73,16 @@
             }
         },
         "metrics": {
-            "loss": 0.6463411450386047,
-            "accuracy": 0.6333246231079102,
-            "auc": 0.6725679039955139,
-            "precision": 0.6384970545768738,
-            "recall": 0.594009280204773,
-            "f1": 0.6154502774221084
+            "loss": 0.6471834778785706,
+            "accuracy": 0.6315223574638367,
+            "auc": 0.6714498996734619,
+            "precision": 0.6266205310821533,
+            "recall": 0.6286118030548096,
+            "f1": 0.6276145710928319
         }
     },
     {
-        "timestamp": "2025-11-01 22:00:51",
+        "timestamp": "2025-11-07 20:38:03",
         "experiment_name": "with_dropout_bn",
         "description": "Added BN to stabilize training",
         "config": {
@@ -114,16 +114,16 @@
             }
         },
         "metrics": {
-            "loss": 0.6500700116157532,
-            "accuracy": 0.6314060688018799,
-            "auc": 0.6723400354385376,
-            "precision": 0.6235462427139282,
-            "recall": 0.6404990553855896,
-            "f1": 0.6319089642359499
+            "loss": 0.6503297090530396,
+            "accuracy": 0.6313188672065735,
+            "auc": 0.6713680028915405,
+            "precision": 0.6316432356834412,
+            "recall": 0.6084858179092407,
+            "f1": 0.6198483349818661
         }
     },
     {
-        "timestamp": "2025-11-01 22:01:14",
+        "timestamp": "2025-11-07 20:38:20",
         "experiment_name": "with_dropout_bn_skip",
         "description": "Added skip connections for gradient flow",
         "config": {
@@ -155,16 +155,16 @@
             }
         },
         "metrics": {
-            "loss": 0.6486847996711731,
-            "accuracy": 0.6322490572929382,
-            "auc": 0.6713637113571167,
-            "precision": 0.6308619379997253,
-            "recall": 0.6159006357192993,
-            "f1": 0.6232915463180776
+            "loss": 0.6532697677612305,
+            "accuracy": 0.6300398111343384,
+            "auc": 0.6661308407783508,
+            "precision": 0.6277551651000977,
+            "recall": 0.6167833805084229,
+            "f1": 0.6222209029653596
         }
     },
     {
-        "timestamp": "2025-11-01 22:02:01",
+        "timestamp": "2025-11-07 20:38:45",
         "experiment_name": "with_all_improvements",
         "description": "Full improvements including bottleneck",
         "config": {
@@ -196,16 +196,16 @@
             }
         },
         "metrics": {
-            "loss": 0.6498792171478271,
-            "accuracy": 0.6324525475502014,
-            "auc": 0.6717057824134827,
-            "precision": 0.6280096769332886,
-            "recall": 0.6277878880500793,
-            "f1": 0.6278987639788111
+            "loss": 0.6500930786132812,
+            "accuracy": 0.6314932703971863,
+            "auc": 0.6705425977706909,
+            "precision": 0.6311535239219666,
+            "recall": 0.6111339926719666,
+            "f1": 0.620982449846025
         }
     },
     {
-        "timestamp": "2025-11-01 22:03:09",
+        "timestamp": "2025-11-07 20:40:07",
         "experiment_name": "random_0",
         "description": "Random search with ParameterSampler",
         "config": {
@@ -237,16 +237,16 @@
             }
         },
         "metrics": {
-            "loss": 0.6467244029045105,
-            "accuracy": 0.632685124874115,
-            "auc": 0.6720227599143982,
-            "precision": 0.6309587955474854,
-            "recall": 0.6176661252975464,
-            "f1": 0.6242417033424528
+            "loss": 0.6468825936317444,
+            "accuracy": 0.6322781443595886,
+            "auc": 0.6717681288719177,
+            "precision": 0.6279385089874268,
+            "recall": 0.6271994113922119,
+            "f1": 0.6275687452158041
         }
     },
     {
-        "timestamp": "2025-11-01 22:03:28",
+        "timestamp": "2025-11-07 20:40:24",
         "experiment_name": "random_1",
         "description": "Random search with ParameterSampler",
         "config": {
@@ -277,16 +277,16 @@
             }
         },
         "metrics": {
-            "loss": 0.6543601155281067,
-            "accuracy": 0.6287898421287537,
-            "auc": 0.6653151512145996,
-            "precision": 0.6313040256500244,
-            "recall": 0.5974224805831909,
-            "f1": 0.6138961117494104
+            "loss": 0.6528775691986084,
+            "accuracy": 0.6292259097099304,
+            "auc": 0.6669585704803467,
+            "precision": 0.6231690049171448,
+            "recall": 0.6309068202972412,
+            "f1": 0.6270140655613066
         }
     },
     {
-        "timestamp": "2025-11-01 22:04:03",
+        "timestamp": "2025-11-07 20:41:03",
         "experiment_name": "random_2",
         "description": "Random search with ParameterSampler",
         "config": {
@@ -317,16 +317,16 @@
             }
         },
         "metrics": {
-            "loss": 0.6515624523162842,
-            "accuracy": 0.62919682264328,
-            "auc": 0.6661428809165955,
-            "precision": 0.6318869590759277,
-            "recall": 0.5973047614097595,
-            "f1": 0.6141093901258471
+            "loss": 0.6525278687477112,
+            "accuracy": 0.6309118866920471,
+            "auc": 0.6665093898773193,
+            "precision": 0.6435444951057434,
+            "recall": 0.5667039155960083,
+            "f1": 0.6026848577776387
         }
     },
     {
-        "timestamp": "2025-11-01 22:04:29",
+        "timestamp": "2025-11-07 20:41:41",
         "experiment_name": "random_3",
         "description": "Random search with ParameterSampler",
         "config": {
@@ -357,16 +357,16 @@
             }
         },
         "metrics": {
-            "loss": 0.6458377242088318,
-            "accuracy": 0.6337316036224365,
-            "auc": 0.6742023229598999,
-            "precision": 0.6365048885345459,
-            "recall": 0.6027187705039978,
-            "f1": 0.6191512513601741
+            "loss": 0.6455217003822327,
+            "accuracy": 0.6329176425933838,
+            "auc": 0.6742173433303833,
+            "precision": 0.6307277679443359,
+            "recall": 0.6196669340133667,
+            "f1": 0.6251484208026598
         }
     },
     {
-        "timestamp": "2025-11-01 22:04:44",
+        "timestamp": "2025-11-07 20:41:59",
         "experiment_name": "random_4",
         "description": "Random search with ParameterSampler",
         "config": {
@@ -397,18 +397,18 @@
             }
         },
         "metrics": {
-            "loss": 0.6461700797080994,
-            "accuracy": 0.6337025165557861,
-            "auc": 0.6733270287513733,
-            "precision": 0.6330586671829224,
-            "recall": 0.6148414015769958,
-            "f1": 0.6238170582440219
+            "loss": 0.6469481587409973,
+            "accuracy": 0.632423460483551,
+            "auc": 0.6723471879959106,
+            "precision": 0.6342472434043884,
+            "recall": 0.6044253706932068,
+            "f1": 0.6189773103926236
         }
     },
     {
-        "timestamp": "2025-11-01 22:42:13",
-        "experiment_name": "with_dropout_bn",
-        "description": "Added BN to stabilize training",
+        "timestamp": "2025-11-07 20:42:52",
+        "experiment_name": "with_dropout",
+        "description": "Added dropout for regularization",
         "config": {
             "model": {
                 "input_dim": 27,
@@ -420,7 +420,7 @@
                 "activation": "relu",
                 "output_activation": "sigmoid",
                 "dropout_rate": 0.3,
-                "batch_norm": true,
+                "batch_norm": false,
                 "skip_connection": false,
                 "bottleneck": false
             },
@@ -433,345 +433,17 @@
                 "patience": 5
             },
             "experiment": {
-                "name": "with_dropout_bn",
-                "description": "Added BN to stabilize training"
+                "name": "with_dropout",
+                "description": "Added dropout for regularization"
             }
         },
         "metrics": {
-            "loss": 0.6489588618278503,
-            "accuracy": 0.632045567035675,
-            "auc": 0.672467827796936,
-            "precision": 0.63053297996521,
-            "recall": 0.6161360740661621,
-            "f1": 0.623251384010953
-        }
-    },
-    {
-        "timestamp": "2025-11-01 22:47:31",
-        "experiment_name": "with_dropout_bn",
-        "description": "Added BN to stabilize training",
-        "config": {
-            "model": {
-                "input_dim": 27,
-                "hidden_layers": [
-                    128,
-                    64,
-                    32
-                ],
-                "activation": "relu",
-                "output_activation": "sigmoid",
-                "dropout_rate": 0.3,
-                "batch_norm": true,
-                "skip_connection": false,
-                "bottleneck": false
-            },
-            "training": {
-                "batch_size": 64,
-                "epochs": 30,
-                "learning_rate": 0.001,
-                "optimizer": "adam",
-                "early_stopping": true,
-                "patience": 5
-            },
-            "experiment": {
-                "name": "with_dropout_bn",
-                "description": "Added BN to stabilize training"
-            }
-        },
-        "metrics": {
-            "loss": 0.649850070476532,
-            "accuracy": 0.630272388458252,
-            "auc": 0.670041024684906,
-            "precision": 0.6216139197349548,
-            "recall": 0.6427940726280212,
-            "f1": 0.6320266165196008
-        }
-    },
-    {
-        "timestamp": "2025-11-02 08:56:16",
-        "experiment_name": "with_dropout_bn",
-        "description": "Added BN to stabilize training",
-        "config": {
-            "model": {
-                "input_dim": 27,
-                "hidden_layers": [
-                    128,
-                    64,
-                    32
-                ],
-                "activation": "relu",
-                "output_activation": "sigmoid",
-                "dropout_rate": 0.3,
-                "batch_norm": true,
-                "skip_connection": false,
-                "bottleneck": false
-            },
-            "training": {
-                "batch_size": 64,
-                "epochs": 30,
-                "learning_rate": 0.001,
-                "optimizer": "adam",
-                "early_stopping": true,
-                "patience": 5
-            },
-            "experiment": {
-                "name": "with_dropout_bn",
-                "description": "Added BN to stabilize training"
-            }
-        },
-        "metrics": {
-            "loss": 0.650299608707428,
-            "accuracy": 0.6294003129005432,
-            "auc": 0.6686350703239441,
-            "precision": 0.6286216378211975,
-            "recall": 0.6103101372718811,
-            "f1": 0.6193305664208295
-        }
-    },
-    {
-        "timestamp": "2025-11-02 08:58:53",
-        "experiment_name": "with_dropout_bn",
-        "description": "Added BN to stabilize training",
-        "config": {
-            "model": {
-                "input_dim": 27,
-                "hidden_layers": [
-                    128,
-                    64,
-                    32
-                ],
-                "activation": "relu",
-                "output_activation": "sigmoid",
-                "dropout_rate": 0.3,
-                "batch_norm": true,
-                "skip_connection": false,
-                "bottleneck": false
-            },
-            "training": {
-                "batch_size": 64,
-                "epochs": 30,
-                "learning_rate": 0.001,
-                "optimizer": "adam",
-                "early_stopping": true,
-                "patience": 5
-            },
-            "experiment": {
-                "name": "with_dropout_bn",
-                "description": "Added BN to stabilize training"
-            }
-        },
-        "metrics": {
-            "loss": 0.6500898003578186,
-            "accuracy": 0.6337025165557861,
-            "auc": 0.6724139451980591,
-            "precision": 0.6312141418457031,
-            "recall": 0.621667742729187,
-            "f1": 0.6264045776631385
-        }
-    },
-    {
-        "timestamp": "2025-11-02 09:06:04",
-        "experiment_name": "with_dropout_bn",
-        "description": "Added BN to stabilize training",
-        "config": {
-            "model": {
-                "input_dim": 27,
-                "hidden_layers": [
-                    128,
-                    64,
-                    32
-                ],
-                "activation": "relu",
-                "output_activation": "sigmoid",
-                "dropout_rate": 0.3,
-                "batch_norm": true,
-                "skip_connection": false,
-                "bottleneck": false
-            },
-            "training": {
-                "batch_size": 64,
-                "epochs": 30,
-                "learning_rate": 0.001,
-                "optimizer": "adam",
-                "early_stopping": true,
-                "patience": 5
-            },
-            "experiment": {
-                "name": "with_dropout_bn",
-                "description": "Added BN to stabilize training"
-            }
-        },
-        "metrics": {
-            "loss": 0.6535254716873169,
-            "accuracy": 0.6310572624206543,
-            "auc": 0.6673911809921265,
-            "precision": 0.6331166625022888,
-            "recall": 0.6018949151039124,
-            "f1": 0.6171111379268734
-        }
-    },
-    {
-        "timestamp": "2025-11-02 09:07:29",
-        "experiment_name": "with_dropout_bn",
-        "description": "Added BN to stabilize training",
-        "config": {
-            "model": {
-                "input_dim": 27,
-                "hidden_layers": [
-                    128,
-                    64,
-                    32
-                ],
-                "activation": "relu",
-                "output_activation": "sigmoid",
-                "dropout_rate": 0.3,
-                "batch_norm": true,
-                "skip_connection": false,
-                "bottleneck": false
-            },
-            "training": {
-                "batch_size": 64,
-                "epochs": 30,
-                "learning_rate": 0.001,
-                "optimizer": "adam",
-                "early_stopping": true,
-                "patience": 5
-            },
-            "experiment": {
-                "name": "with_dropout_bn",
-                "description": "Added BN to stabilize training"
-            }
-        },
-        "metrics": {
-            "loss": 0.65340656042099,
-            "accuracy": 0.6307955980300903,
-            "auc": 0.6701543927192688,
-            "precision": 0.6266076564788818,
-            "recall": 0.6250220537185669,
-            "f1": 0.6258138644197625
-        }
-    },
-    {
-        "timestamp": "2025-11-02 09:19:06",
-        "experiment_name": "with_dropout_bn",
-        "description": "Added BN to stabilize training",
-        "config": {
-            "model": {
-                "input_dim": 27,
-                "hidden_layers": [
-                    128,
-                    64,
-                    32
-                ],
-                "activation": "relu",
-                "output_activation": "sigmoid",
-                "dropout_rate": 0.3,
-                "batch_norm": true,
-                "skip_connection": false,
-                "bottleneck": false
-            },
-            "training": {
-                "batch_size": 64,
-                "epochs": 30,
-                "learning_rate": 0.001,
-                "optimizer": "adam",
-                "early_stopping": true,
-                "patience": 5
-            },
-            "experiment": {
-                "name": "with_dropout_bn",
-                "description": "Added BN to stabilize training"
-            }
-        },
-        "metrics": {
-            "loss": 0.6525883674621582,
-            "accuracy": 0.6310281753540039,
-            "auc": 0.6715747117996216,
-            "precision": 0.6252768039703369,
-            "recall": 0.6314952969551086,
-            "f1": 0.6283706631532718
-        }
-    },
-    {
-        "timestamp": "2025-11-02 09:22:38",
-        "experiment_name": "with_dropout_bn",
-        "description": "Added BN to stabilize training",
-        "config": {
-            "model": {
-                "input_dim": 27,
-                "hidden_layers": [
-                    128,
-                    64,
-                    32
-                ],
-                "activation": "relu",
-                "output_activation": "sigmoid",
-                "dropout_rate": 0.3,
-                "batch_norm": true,
-                "skip_connection": false,
-                "bottleneck": false
-            },
-            "training": {
-                "batch_size": 64,
-                "epochs": 30,
-                "learning_rate": 0.001,
-                "optimizer": "adam",
-                "early_stopping": true,
-                "patience": 5
-            },
-            "experiment": {
-                "name": "with_dropout_bn",
-                "description": "Added BN to stabilize training"
-            }
-        },
-        "metrics": {
-            "loss": 0.6534847617149353,
-            "accuracy": 0.6308537721633911,
-            "auc": 0.6691359877586365,
-            "precision": 0.6279346942901611,
-            "recall": 0.6201376914978027,
-            "f1": 0.6240118430792005
-        }
-    },
-    {
-        "timestamp": "2025-11-02 09:26:37",
-        "experiment_name": "with_dropout_bn",
-        "description": "Added BN to stabilize training",
-        "config": {
-            "model": {
-                "input_dim": 27,
-                "hidden_layers": [
-                    128,
-                    64,
-                    32
-                ],
-                "activation": "relu",
-                "output_activation": "sigmoid",
-                "dropout_rate": 0.3,
-                "batch_norm": true,
-                "skip_connection": false,
-                "bottleneck": false
-            },
-            "training": {
-                "batch_size": 64,
-                "epochs": 30,
-                "learning_rate": 0.001,
-                "optimizer": "adam",
-                "early_stopping": true,
-                "patience": 5
-            },
-            "experiment": {
-                "name": "with_dropout_bn",
-                "description": "Added BN to stabilize training"
-            }
-        },
-        "metrics": {
-            "loss": 0.6543810963630676,
-            "accuracy": 0.6280340552330017,
-            "auc": 0.6682448983192444,
-            "precision": 0.6245918273925781,
-            "recall": 0.6190784573554993,
-            "f1": 0.6218229105095165
+            "loss": 0.6457797884941101,
+            "accuracy": 0.6342548131942749,
+            "auc": 0.6725092530250549,
+            "precision": 0.6345719695091248,
+            "recall": 0.6120167374610901,
+            "f1": 0.6230902881792583
         }
     }
 ]
