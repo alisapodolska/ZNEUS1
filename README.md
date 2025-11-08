@@ -252,3 +252,68 @@ Tested variations of:
 | Outcome | Stable baseline ready for Week 3 optimizations |
 
 ---
+
+
+#  Week 3 – Model Improvements, Multiclass & Final Preparation
+
+During Week 3, we focused on improving our model pipeline, switching from binary to multiclass classification, and preparing the whole project so it’s ready for submission and presentation.
+
+##  1. Simplifying Model Architecture (from 3 models → 2)
+
+In Week 2, we were using three different MLP implementations:
+
+* one static architecture,
+* one configurable model,
+* and a special version adjustable only inside W&B.
+
+This was confusing and hard to maintain, so we decided to simplify everything.
+
+Now we only use **two models**:
+
+| Model          | Purpose                                      |
+|----------------|----------------------------------------------|
+| `build_mlp_a()` | Static model (fixed layers), good for quick testing |
+| `build_mlp()`  | Fully configurable model, works both in Jupyter Notebook and W&B |
+
+So now we don’t duplicate code anymore, and both models support logging, configs, and JSON import/export.
+
+## 2. Switching to Multiclass Classification (classes 5, 6, 7)
+
+Originally our project was binary (COVID positive vs negative), but according to the task requirements, we also implemented **multiclass classification**:
+
+| Class | Description              |
+|-------|--------------------------|
+| 5     | Suspected COVID-19      |
+| 6     | Confirmed Negative      |
+| 7     | Confirmed COVID-19      |
+
+To make this work:
+
+* We used `LabelEncoder` → converted class values to 0, 1, 2
+* Then applied `to_categorical()` → one-hot encoding
+* Output layer changed to: `Dense(3, activation="softmax")`
+* Loss changed from `binary_crossentropy` → `categorical_crossentropy`
+* Evaluation now includes precision, recall, F1-score per class + confusion matrix
+
+We also added explanations in Markdown inside the Notebook so the code is easier to read.
+
+##  3. Preparing the Project for Final Submission
+
+We spent time cleaning up and organizing everything so the notebook looks like a proper final project, not just rough experiments. Here’s what we did:
+
+- [x] Split the notebook into logical sections (data prep, model, training, evaluation)
+- [x] Added Markdown explanations to each block (written in simple student style)
+- [x] Made the code reusable — works both locally and with W&B
+- [x] Added multiclass version of training, evaluation, and confusion matrix
+- [x] Saved final model (`.h5`) and config (`.json`)
+- [x] Everything is ready to turn into a PDF or presentation
+
+##  Week 3 Summary
+
+| Task                             |
+|----------------------------------|
+| Reduced models from 3 to 2         |
+| Configurable model works in both W&B and Jupyter |
+| Implemented multiclass classification (5/6/7)   |
+| Added Markdown explanations to code  |
+| Notebook prepared for final submission |
