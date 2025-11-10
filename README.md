@@ -1,7 +1,7 @@
 # ZNEUS Project 1 – COVID-19 Classification  
 **Week 1: Data Analysis & Preprocessing**
 
-**Team:** Alisa Podolska, Yulian Kysil  
+**Team:** Alisa Podolska, Yulian Kisil  
 **Dataset:** https://www.kaggle.com/datasets/meirnizri/covid19-dataset  
 **Goal:** Detect COVID-19 cases using patient medical data (initially multiclass → converted to binary classification)
 
