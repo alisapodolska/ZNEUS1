@@ -892,5 +892,534 @@
             "recall": 0.6203142404556274,
             "f1": 0.624577827813
         }
+    },
+    {
+        "timestamp": "2025-11-10 09:43:40",
+        "experiment_name": "baseline",
+        "description": "Baseline without improvements",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0,
+                "batch_norm": false,
+                "skip_connection": false,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "baseline",
+                "description": "Baseline without improvements"
+            }
+        },
+        "metrics": {
+            "loss": 0.6459999084472656,
+            "accuracy": 0.6330920457839966,
+            "auc": 0.6729315519332886,
+            "precision": 0.6348990797996521,
+            "recall": 0.6053080558776855,
+            "f1": 0.6197505573296379
+        }
+    },
+    {
+        "timestamp": "2025-11-10 09:46:46",
+        "experiment_name": "with_dropout",
+        "description": "Added dropout for regularization",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.3,
+                "batch_norm": false,
+                "skip_connection": false,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "with_dropout",
+                "description": "Added dropout for regularization"
+            }
+        },
+        "metrics": {
+            "loss": 0.6458954811096191,
+            "accuracy": 0.6340804100036621,
+            "auc": 0.6728744506835938,
+            "precision": 0.6396905183792114,
+            "recall": 0.5935385227203369,
+            "f1": 0.6157509157509158
+        }
+    },
+    {
+        "timestamp": "2025-11-10 11:11:03",
+        "experiment_name": "baseline",
+        "description": "Baseline without improvements",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0,
+                "batch_norm": false,
+                "skip_connection": false,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "baseline",
+                "description": "Baseline without improvements"
+            }
+        },
+        "metrics": {
+            "loss": 0.6459982395172119,
+            "accuracy": 0.6315223574638367,
+            "auc": 0.672742486000061,
+            "precision": 0.6388192176818848,
+            "recall": 0.5845348238945007,
+            "f1": 0.6104726199987708
+        }
+    },
+    {
+        "timestamp": "2025-11-10 11:13:56",
+        "experiment_name": "with_dropout",
+        "description": "Added dropout for regularization",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.3,
+                "batch_norm": false,
+                "skip_connection": false,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "with_dropout",
+                "description": "Added dropout for regularization"
+            }
+        },
+        "metrics": {
+            "loss": 0.6462451815605164,
+            "accuracy": 0.632423460483551,
+            "auc": 0.6725034713745117,
+            "precision": 0.6279576420783997,
+            "recall": 0.6278467774391174,
+            "f1": 0.6279021863873113
+        }
+    },
+    {
+        "timestamp": "2025-11-10 11:18:20",
+        "experiment_name": "with_dropout_bn",
+        "description": "Added BN to stabilize training",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.3,
+                "batch_norm": true,
+                "skip_connection": false,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "with_dropout_bn",
+                "description": "Added BN to stabilize training"
+            }
+        },
+        "metrics": {
+            "loss": 0.6486997604370117,
+            "accuracy": 0.631987452507019,
+            "auc": 0.6717166900634766,
+            "precision": 0.6268071532249451,
+            "recall": 0.6302006840705872,
+            "f1": 0.6284993250777627
+        }
+    },
+    {
+        "timestamp": "2025-11-10 11:20:20",
+        "experiment_name": "with_dropout_bn_skip",
+        "description": "Added skip connections for gradient flow",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.3,
+                "batch_norm": true,
+                "skip_connection": true,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "with_dropout_bn_skip",
+                "description": "Added skip connections for gradient flow"
+            }
+        },
+        "metrics": {
+            "loss": 0.6537078022956848,
+            "accuracy": 0.6318711638450623,
+            "auc": 0.66684490442276,
+            "precision": 0.6279179453849792,
+            "recall": 0.6252574324607849,
+            "f1": 0.6265848911953765
+        }
+    },
+    {
+        "timestamp": "2025-11-10 11:23:23",
+        "experiment_name": "with_all_improvements",
+        "description": "Full improvements including bottleneck",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.3,
+                "batch_norm": true,
+                "skip_connection": true,
+                "bottleneck": true
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "with_all_improvements",
+                "description": "Full improvements including bottleneck"
+            }
+        },
+        "metrics": {
+            "loss": 0.6479520797729492,
+            "accuracy": 0.6325688362121582,
+            "auc": 0.6715261936187744,
+            "precision": 0.6333557963371277,
+            "recall": 0.6083093285560608,
+            "f1": 0.6205799363630906
+        }
+    },
+    {
+        "timestamp": "2025-11-10 11:27:05",
+        "experiment_name": "random_0",
+        "description": "Random search with ParameterSampler",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    256,
+                    128,
+                    64
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.4,
+                "batch_norm": false,
+                "skip_connection": true,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 128,
+                "epochs": 50,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "random_0",
+                "description": "Random search with ParameterSampler"
+            }
+        },
+        "metrics": {
+            "loss": 0.6459710001945496,
+            "accuracy": 0.6343420147895813,
+            "auc": 0.6725286841392517,
+            "precision": 0.6400203108787537,
+            "recall": 0.5936561822891235,
+            "f1": 0.6159670279346665
+        }
+    },
+    {
+        "timestamp": "2025-11-10 11:30:10",
+        "experiment_name": "random_1",
+        "description": "Random search with ParameterSampler",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.1,
+                "batch_norm": true,
+                "skip_connection": true,
+                "bottleneck": false
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 50,
+                "learning_rate": 0.0005,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "random_1",
+                "description": "Random search with ParameterSampler"
+            }
+        },
+        "metrics": {
+            "loss": 0.6500846743583679,
+            "accuracy": 0.6326269507408142,
+            "auc": 0.6711103916168213,
+            "precision": 0.632105827331543,
+            "recall": 0.6131348013877869,
+            "f1": 0.6224758035607599
+        }
+    },
+    {
+        "timestamp": "2025-11-10 11:34:25",
+        "experiment_name": "random_2",
+        "description": "Random search with ParameterSampler",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.4,
+                "batch_norm": true,
+                "skip_connection": true,
+                "bottleneck": true
+            },
+            "training": {
+                "batch_size": 128,
+                "epochs": 50,
+                "learning_rate": 0.0001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "random_2",
+                "description": "Random search with ParameterSampler"
+            }
+        },
+        "metrics": {
+            "loss": 0.6525222659111023,
+            "accuracy": 0.6282084584236145,
+            "auc": 0.6645931005477905,
+            "precision": 0.6272941827774048,
+            "recall": 0.6094273924827576,
+            "f1": 0.6182317473583666
+        }
+    },
+    {
+        "timestamp": "2025-11-10 11:38:17",
+        "experiment_name": "random_3",
+        "description": "Random search with ParameterSampler",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.1,
+                "batch_norm": true,
+                "skip_connection": true,
+                "bottleneck": true
+            },
+            "training": {
+                "batch_size": 128,
+                "epochs": 50,
+                "learning_rate": 0.0005,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "random_3",
+                "description": "Random search with ParameterSampler"
+            }
+        },
+        "metrics": {
+            "loss": 0.6454097628593445,
+            "accuracy": 0.6326269507408142,
+            "auc": 0.674220085144043,
+            "precision": 0.6325077414512634,
+            "recall": 0.6116636395454407,
+            "f1": 0.6219110871776461
+        }
+    },
+    {
+        "timestamp": "2025-11-10 11:40:00",
+        "experiment_name": "random_4",
+        "description": "Random search with ParameterSampler",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.1,
+                "batch_norm": true,
+                "skip_connection": false,
+                "bottleneck": true
+            },
+            "training": {
+                "batch_size": 128,
+                "epochs": 20,
+                "learning_rate": 0.0005,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "random_4",
+                "description": "Random search with ParameterSampler"
+            }
+        },
+        "metrics": {
+            "loss": 0.6478171348571777,
+            "accuracy": 0.6313479542732239,
+            "auc": 0.6721396446228027,
+            "precision": 0.6291878819465637,
+            "recall": 0.617783784866333,
+            "f1": 0.623433695587624
+        }
+    },
+    {
+        "timestamp": "2025-11-10 11:43:03",
+        "experiment_name": "with_all_improvements",
+        "description": "Full improvements including bottleneck",
+        "config": {
+            "model": {
+                "input_dim": 27,
+                "hidden_layers": [
+                    128,
+                    64,
+                    32
+                ],
+                "activation": "relu",
+                "output_activation": "sigmoid",
+                "dropout_rate": 0.3,
+                "batch_norm": true,
+                "skip_connection": true,
+                "bottleneck": true
+            },
+            "training": {
+                "batch_size": 64,
+                "epochs": 30,
+                "learning_rate": 0.001,
+                "optimizer": "adam",
+                "early_stopping": true,
+                "patience": 5
+            },
+            "experiment": {
+                "name": "with_all_improvements",
+                "description": "Full improvements including bottleneck"
+            }
+        },
+        "metrics": {
+            "loss": 0.6502727270126343,
+            "accuracy": 0.6310572624206543,
+            "auc": 0.6709363460540771,
+            "precision": 0.6235706210136414,
+            "recall": 0.6386159062385559,
+            "f1": 0.631003605070357
+        }
     }
 ]

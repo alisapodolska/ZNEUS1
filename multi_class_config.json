@@ -24,6 +24,6 @@
     },
     "experiment": {
         "name": "multi_class_mlp",
-        "description": "MLP \u0434\u043b\u044f multi-class classification by classes 5,6,7"
+        "description": "MLP multi-class classification by classes 5,6,7"
     }
 }
