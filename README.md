@@ -302,11 +302,11 @@ We also added explanations in Markdown inside the Notebook so the code is easier
 We spent time cleaning up and organizing everything so the notebook looks like a proper final project, not just rough experiments. Here’s what we did:
 
 - [x] Split the notebook into logical sections (data prep, model, training, evaluation)
-- [x] Added Markdown explanations to each block (written in simple student style)
+- [x] Added Markdown explanations to each block
 - [x] Made the code reusable — works both locally and with W&B
 - [x] Added multiclass version of training, evaluation, and confusion matrix
 - [x] Saved final model (`.h5`) and config (`.json`)
-- [x] Everything is ready to turn into a PDF or presentation
+- [x] Everything is ready for presentation
 
 ##  Week 3 Summary
 
