@@ -95,11 +95,11 @@ Renamed for clarity:
 
 ###  Hypothesis Testing Example (Chi-Square Test)
 
-**H0:** Age is independent of COVID result  
-**H1:** Age is related to COVID result
+**H0:** The attributes: PNEUMONIA, AGE, IS_HOSPITALIZED are independent of COVID result  
+**H1:** The attributes: PNEUMONIA, AGE, IS_HOSPITALIZED are related to COVID result
 
 Chi2 = 8656.253, p-value < 0.00001 → Reject H0
-There IS a significant relationship between AGE and CLASSIFICATION_FINAL.
+There IS a significant relationship between The attributes: PNEUMONIA, AGE, IS_HOSPITALIZED and CLASSIFICATION_FINAL.
 ---
 
 ## 6. Final Output
@@ -237,7 +237,7 @@ Tested variations of:
 | True 0    | 11085       | 6323        |
 | True 1    | 6473        | 10520       |
 
-🔹 No significant overfitting observed (train and validation losses almost identical).
+ No significant overfitting observed (train and validation losses almost identical).
 
 ---
 
@@ -301,12 +301,12 @@ We also added explanations in Markdown inside the Notebook so the code is easier
 
 We spent time cleaning up and organizing everything so the notebook looks like a proper final project, not just rough experiments. Here’s what we did:
 
-- [x] Split the notebook into logical sections (data prep, model, training, evaluation)
-- [x] Added Markdown explanations to each block
-- [x] Made the code reusable — works both locally and with W&B
-- [x] Added multiclass version of training, evaluation, and confusion matrix
-- [x] Saved final model (`.h5`) and config (`.json`)
-- [x] Everything is ready for presentation
+- ✅ Split the notebook into logical sections (data prep, model, training, evaluation)
+- ✅ Added Markdown explanations to each block
+- ✅ Made the code reusable — works both locally and with W&B
+- ✅ Added multiclass version of training, evaluation, and confusion matrix
+- ✅ Saved final model (`.h5`) and config (`.json`)
+- ✅ Everything is ready for presentation
 
 ##  Week 3 Summary
 
